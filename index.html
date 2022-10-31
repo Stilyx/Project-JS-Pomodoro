@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/858d6c2453.js" crossorigin="anonymous"></script>
+    <title>Pomodoro</title>
+  </head>
+  <body>
+    <main class="container">
+      <!-- main title and nav pomodoro -->
+      <h1 class="main-title">pomodoro</h1>
+      <div class="nav-options">
+        <input type="radio" name="menu" id="pomodoro" checked class="pomodoro" />
+        <label for="pomodoro" class="option">pomodoro</label>
+        <input type="radio" name="menu" id="shortBreak" class="shortBreak" />
+        <label for="shortBreak" class="option">short break</label>
+        <input type="radio" name="menu" id="longBreak" class="longBreak" />
+        <label for="longBreak" class="option">long break</label>
+      </div>
+
+      <!-- pomodoro circle -->
+      <div class="content">
+        <div class="circle"></div>
+        <div class="timer-button">
+          <div class="border-circle"></div>
+          <div class="timer-circle">
+            <h1 class="timer"></h1>
+            <p class="pause-resume-restart">RESUME</p>
+            <div class="buttons">
+              <i class="fa-solid fa-rotate-left"></i>
+              <i class="fa-solid fa-pause"></i>
+              <i class="fa-solid fa-play"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- options -->
+      <div class="options-wrapper">
+        <section class="options">
+          <div class="close">
+            <h1 class="title-popup">Settings</h1>
+            <p class="close-popup">X</p>
+          </div>
+          <!-- timer inputs -->
+          <p class="choose-time topic">TIME (MINUTES)</p>
+          <div class="inputs">
+            <div class="input-content">
+              <label for="pomodoroMinutes">pomodoro</label>
+              <input type="number" name="time" id="pomorodoMinutes" value="25" class="pomodoro" />
+            </div>
+            <div class="input-content">
+              <label for="pomodoroMinutes">short break</label>
+              <input type="number" name="time" id="shortBreakMins" value="5" class="shortBreak" />
+            </div>
+            <div class="input-content">
+              <label for="pomodoroMinutes">long break</label>
+              <input type="number" name="time" id="longBreakMins" value="15" class="longBreak" />
+            </div>
+          </div>
+          <!-- fonts input -->
+          <div class="fonts">
+            <p class="topic">FONT</p>
+            <div class="choose-font">
+              <input type="radio" name="options" id="kumbhSans" checked />
+              <label for="kumbhSans" class="font">Aa</label>
+              <input type="radio" name="options" id="robotoSlab" />
+              <label for="robotoSlab" class="font">Aa</label>
+              <input type="radio" name="options" id="spaceMono" />
+              <label for="spaceMono" class="font">Aa</label>
+            </div>
+          </div>
+          <!-- colors input -->
+          <div class="colors">
+            <p class="topic">COLORS</p>
+            <div class="choose-color">
+              <input type="radio" name="customColor" id="red" checked />
+              <label for="red" class="custom"></label>
+              <input type="radio" name="customColor" id="blue" />
+              <label for="blue" class="custom"></label>
+              <input type="radio" name="customColor" id="purple" />
+              <label for="purple" class="custom"></label>
+            </div>
+          </div>
+          <button type="submit" class="submit-button">Apply</button>
+        </section>
+      </div>
+    </main>
+    <img src="images/gear.png" alt="Options" class="image open-options" />
+    <script src="script.js"></script>
+  </body>
+</html>
