@@ -30,23 +30,21 @@ clock.innerHTML = `${mins}:00`;
 minutes = mins < 10 ? '0' + mins : mins;
 clock.innerHTML = `${minutes}:00`;
 
-console.log(mins);
-console.log(time);
-
 const updateCountDown = () => {
-  let minutes = Math.floor(time / 60);
-  let seconds = time % 60;
-  minutes = minutes < 10 ? '0' + minutes : minutes;
-  seconds = seconds < 10 ? '0' + seconds : seconds;
-  clock.innerHTML = `${minutes}:${seconds}`;
-  console.log(mins);
-  console.log(time);
-  time--;
-
   if (time === -1) {
     clock.innerHTML = '00:00';
+    timer.childNodes[5].childNodes[5].style.display = 'block';
+    timer.childNodes[5].childNodes[3].style.display = 'none';
+    timer.childNodes[3].textContent = 'RESUME';
     clearInterval(interval);
     interval = null;
+  } else {
+    let minutes = Math.floor(time / 60);
+    let seconds = time % 60;
+    minutes = minutes < 10 ? '0' + minutes : minutes;
+    seconds = seconds < 10 ? '0' + seconds : seconds;
+    clock.innerHTML = `${minutes}:${seconds}`;
+    time--;
   }
 };
 
@@ -119,6 +117,7 @@ function getValues() {
         if (input.classList[0] === itemClassChecked) {
           mins = Number(input.value);
           time = mins * 60;
+          mins = mins < 10 ? '0' + mins : mins;
           clock.innerHTML = `${mins}:00`;
           clearInterval(interval);
           interval = null;
