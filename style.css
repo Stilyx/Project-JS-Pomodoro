@@ -293,6 +293,10 @@ input[type='radio']:checked + label.option {
   margin-bottom: 5px;
 }
 
+.input-content input:focus {
+  outline: 2px solid var(--toggle-options);
+}
+
 .input-content label {
   font-size: 12px;
   font-weight: 700;
@@ -428,10 +432,6 @@ input[type='radio']:checked + label.custom {
 
 @media (max-width: 590px) {
   /* pomodoro navigation */
-
-  body {
-    height: auto;
-  }
 
   .nav-options {
     width: 350px;
