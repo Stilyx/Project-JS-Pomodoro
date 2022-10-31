@@ -20,6 +20,7 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: var(--font-family);
+  user-select: none;
 }
 
 .container {
@@ -432,6 +433,11 @@ input[type='radio']:checked + label.custom {
 
 @media (max-width: 590px) {
   /* pomodoro navigation */
+
+  body {
+    -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+    height: 630px;
+  }
 
   .nav-options {
     width: 350px;
