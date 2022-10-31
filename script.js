@@ -1,9 +1,7 @@
 const config = document.querySelector('.open-options');
 const options = document.querySelector('.options-wrapper');
 const timer = document.querySelector('.timer-circle');
-const circle = document.querySelector('.content');
 const navOptions = document.getElementsByName('menu');
-const pomodoro = document.getElementById('pomorodoMinutes');
 const clock = timer.childNodes[1];
 const stop = document.querySelector('.timer-button');
 const submit = document.querySelector('.submit-button');
@@ -89,6 +87,8 @@ function resetCountDown(e) {
   }
 }
 
+// Open and Close PopUp
+
 function openPopUp(e) {
   options.style.display = 'block';
   timer.childNodes[3].textContent = 'RESUME';
@@ -106,6 +106,8 @@ function closePopUp(e) {
     options.style.display = 'none';
   }
 }
+
+// Get Value of inputs
 
 function getValues() {
   navChecked.forEach(item => {
