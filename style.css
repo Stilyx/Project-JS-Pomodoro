@@ -429,6 +429,10 @@ input[type='radio']:checked + label.custom {
 @media (max-width: 590px) {
   /* pomodoro navigation */
 
+  body {
+    height: auto;
+  }
+
   .nav-options {
     width: 350px;
   }
