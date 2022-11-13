@@ -24,9 +24,7 @@ submit.addEventListener('click', getValues);
 let mins = 25;
 clock.innerHTML = `${mins}:00`;
 let time = Number(mins * 60);
-
 clock.innerHTML = `${mins}:00`;
-
 minutes = mins < 10 ? '0' + mins : mins;
 clock.innerHTML = `${minutes}:00`;
 
