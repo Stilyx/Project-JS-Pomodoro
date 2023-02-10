@@ -1,10 +1,4 @@
-<h2 align="center">
-Pomodoro Mentor Challenge
-</h2>
 
- - link to see Pomodoro in Github Pages
- https://stilyx.github.io/POMODORO/
- 
 ##
 
 - Desktop Timer
@@ -26,3 +20,17 @@ Pomodoro Mentor Challenge
 ![pomodoro-options-mobile](https://user-images.githubusercontent.com/109632184/198916374-6490eed8-1993-4f86-a2c3-2af816d4ccf2.png)
 
 </div>
+
+
+<h1 align="center">Pomodoro Project</h1>
+
+<h2>Inspiração do Desafio</h2>
+
+- <a href="https://www.frontendmentor.io/challenges/pomodoro-app-KBFnycJ6G" target="_blank">Mentor Challenge</a>
+
+<h2>Técnologias Utilizadas</h2>
+
+- HTML
+- CSS
+- Javascript
+
