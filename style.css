@@ -92,7 +92,6 @@ input[type='radio']:checked + label.option {
   border-radius: 50%;
   background: linear-gradient(315deg, #2e325a 0%, #0e112a 100%);
   box-shadow: -10px -10px 40px #272c5a, 10px 10px 50px #121530;
-  /* display: flex; */
   justify-content: center;
   align-items: center;
   margin: 0 auto;
